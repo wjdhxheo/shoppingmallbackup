@@ -9,8 +9,7 @@ $(function(){
 			url : "/shoppingmall/mg/managerLoginPro.do",
 			data : query,
 			success : function(data){
-				alert(data);
-				window.location.href("/shoppingmall/mg/managerMain.do");
+				window.location.href = "/shoppingmall/mg/managerMain.do";
 			}
 		});
 	});
@@ -21,7 +20,7 @@ $(function(){
 			type : "post",
 			url : "/shoppingmall/mg/managerLogout.do",
 			success : function(data){
-				window.location.href("/shoppingmall/mg/managerMain.do");
+				window.location.href = "/shoppingmall/mg/managerMain.do";
 			}
 		});
 	});

@@ -9,5 +9,6 @@
 </head>
 <body>
 <img src="http://localhost:8080/shoppingmall/image/mario.gif"/>
+<p>톰켓이 아파요..500에러</p>
 </body>
 </html>

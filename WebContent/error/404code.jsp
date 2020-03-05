@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%response.setStatus(HttpServletResponse.SC_OK); %>
+    <% response.setStatus(HttpServletResponse.SC_OK); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,5 +9,6 @@
 </head>
 <body>
 <img src="http://localhost:8080/shoppingmall/image/mario.gif"/>
+<p>페이지를 찾을수 없어용</p>
 </body>
 </html>

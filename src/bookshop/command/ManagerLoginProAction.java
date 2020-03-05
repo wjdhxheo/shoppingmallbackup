@@ -18,7 +18,7 @@ public class ManagerLoginProAction implements CommandAction {
 		//DB와 연동해서 사용자의 인증을 처리
 		MngrDBBean dbPro = MngrDBBean.getInstance();
 		int check = dbPro.userCheck(id, passwd);
-		
+		System.out.println(check);
 		//해당 뷰 (응답 페이지)로 보낼 내용을 request 속성에 지정
 		request.setAttribute("check", new Integer(check));
 		request.setAttribute("id", id);

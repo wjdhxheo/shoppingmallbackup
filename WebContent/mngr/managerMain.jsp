@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <link rel = "stylesheet" href="/shoppingmall/css/style.css"/>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="/shoppingmall/mngr/managermain.js"></script>
+<script type="text/javascript" src="/shoppingmall/mngr/managerMain.js"></script>
 <title>managerMain.jsp</title>
 </head>
 <body>
