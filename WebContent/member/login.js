@@ -1,6 +1,7 @@
 $(document).ready(function(){
+	alert("접속준비이이");
 	$("#uRes").click(function(){//[회원가입]버튼 클릭
-		window.location.href="/shoppingmall/registerForm.do";
+		window.location.href= "/shoppingmall/registerForm.do";
 	});
 	
 	$("#uLogin").click(function(){//[로그인]버튼 클릭

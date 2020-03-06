@@ -1,4 +1,5 @@
 $(function() {
+	
 	$("#insertCart").click(function() {// [장바구니에 담기]버튼 클릭
 		var buyer = $("#buyer").val();
 		var book_kind = $("#book_kind").val();
