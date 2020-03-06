@@ -319,6 +319,7 @@ public class MngrDBBean {
 
 			String sql = "select * from book where book_kind = ? order by reg_date desc";
 			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,book_kind);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				bookList = new MngrDataBean[count];
