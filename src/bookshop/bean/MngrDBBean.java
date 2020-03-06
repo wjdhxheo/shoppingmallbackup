@@ -183,6 +183,37 @@ public class MngrDBBean {
 		}
 		return x;
 	}// getBookCount 메소드 종료
+	
+	//해당 분류의 책의 수를 얻어내는 메소드
+	public int getBookCount(String book_kind) throws Exception{
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		int x = 0;
+		int kind = Integer.parseInt(book_kind);
+		
+		try {
+			conn = getConnection();
+			String query = "select count(*) from book where book_kind = "+kind;
+			pstmt = conn.prepareStatement(query);
+			rs = pstmt.executeQuery();
+			
+			if(rs.next())
+				x=rs.getInt(1);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(rs!=null) rs.close();
+				if(pstmt!=null)pstmt.close();
+				if(conn!=null)conn.close();
+			} catch (SQLException e2) {
+				e2.printStackTrace();
+			}
+		}
+		return x;
+	}
 
 	// 책의 제목을 알아내는 메소드
 	public String getBookTitle(int book_id) {
